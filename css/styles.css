@@ -23,8 +23,123 @@
     width: 100%;
     height: auto;
     object-fit: cover;
-    max-height: 500px; /* Ajusta la altura máxima según tus necesidades */
+    max-height: 500px;
 }
 
+/* Estilos de las tarjetas de panoramas */
+.panoramas-section {
+    margin-top: 70px;
+}
 
-    
+.panoramas-intro {
+    max-width: 760px;
+}
+
+.panoramas-kicker {
+    color: #C35627;
+    letter-spacing: .12em;
+}
+
+.panoramas-card-image {
+    height: 210px;
+    object-fit: cover;
+}
+
+.panoramas-badge {
+    background-color: #EFD7C8;
+    color: #593D2E;
+}
+
+/* Estilos para el Carrusel */
+.carousel-cards-track {
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none; /* Firefox */
+}
+
+.carousel-cards-track::-webkit-scrollbar {
+    display: none;
+}
+
+/* Tarjetas índice */
+.carousel-card {
+    width: 260px;
+    height: 380px;
+    cursor: pointer;
+    background-color: #f5f5f5;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.carousel-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15) !important;
+}
+
+.carousel-card img {
+    transition: transform 0.4s ease;
+}
+
+.carousel-card:hover img {
+    transform: scale(1.05);
+}
+
+/* Degradado inferior para resaltar texto y flecha */
+.overlay-card {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.85) 0%, rgba(0, 0, 0, 0.4) 60%, transparent 100%);
+    z-index: 2;
+}
+
+.btn-card-arrow {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s ease;
+}
+
+.carousel-card:hover .btn-card-arrow {
+    transform: translateX(4px);
+}
+
+/* Botones circulares de navegación inferior */
+.carousel-nav-btn {
+    width: 42px;
+    height: 42px;
+    border-color: #30525C !important;
+    color: #30525C !important;
+    transition: all 0.2s ease;
+}
+
+.carousel-nav-btn:hover {
+    background-color: #30525C !important;
+    color: #fff !important;
+}
+
+/* Colores compartidos del encabezado y pie de página */
+.main-navbar {
+    background-color: #DCAA89;
+}
+
+.hero-title {
+    color: #C35627;
+}
+
+.hero-copy {
+    color: #3b3a3a;
+}
+
+.section-link {
+    color: #C35627;
+}
+
+.site-footer {
+    background-color: #30525C !important;
+}
+
+.site-footer a {
+    color: #fff !important;
+}
+
+.footer-link,
+.footer-contact-link {
+    color: #fff !important;
+}
