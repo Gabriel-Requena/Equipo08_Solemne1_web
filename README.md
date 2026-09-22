@@ -2,8 +2,8 @@
 
 
 ## Integrantes: 
-Benjamin del Valle 
-Gabriel Requena 
+Benjamin del Valle,
+Gabriel Requena y  
 Nicolas Venegas
 
 ## Descripcion: 
