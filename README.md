@@ -1,19 +1,19 @@
-## Destino Cordillera 
+# Destino Cordillera 
 
 
-# Integrantes: 
+## Integrantes: 
 Benjamin del Valle 
 Gabriel Requena 
 Nicolas Venegas
 
-# Descripcion: 
+## Descripcion: 
 
 
-# Instrucciones para ejecutar el sitio: 
+## Instrucciones para ejecutar el sitio: 
 
 
-# Tecnologias utilizadas: 
+## Tecnologias utilizadas: 
 
 
-# Distribucion de responsabilidades: 
+## Distribucion de responsabilidades: 
 
