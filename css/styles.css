@@ -19,3 +19,12 @@
 .navbar-nav .nav-item .nav-link.active::after {
     width: 75%;
 }
+.hero-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    max-height: 500px; /* Ajusta la altura máxima según tus necesidades */
+}
+
+
+    
