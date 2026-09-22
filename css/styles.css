@@ -1,0 +1,21 @@
+.navbar-nav .nav-link {
+    position: relative;
+    padding-bottom: 6px;
+}
+
+.navbar-nav .nav-link::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 4px;
+    bottom: 0;
+    left: 50%;
+    background-color: #EFD7C8;
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+}
+
+.navbar-nav .nav-item .nav-link:hover::after,
+.navbar-nav .nav-item .nav-link.active::after {
+    width: 75%;
+}
