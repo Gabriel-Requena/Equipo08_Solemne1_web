@@ -26,5 +26,41 @@
     max-height: 500px; /* Ajusta la altura máxima según tus necesidades */
 }
 
+.carrusel-tarjetas{
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+}
+
+.carrusel-tarjetas .card {
+    min-width: 320px;
+    max-width: 320px;
+    scroll-snap-align: start;
+    flex: 0 0 auto;
+}
+
+.carrusel-tarjetas::-webkit-scrollbar {
+    height: 10px;
+}
+.carrusel-tarjetas::-webkit-scrollbar-track{
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+.carrusel-tarjetas::-webkit-scrollbar-thumb{
+    background: #DCAA89;
+    border-radius: 10px;
+}
+.carrusel-tarjetas::-webkit-scrollbar-thumb:hover {
+    background: #c35627;
+}
+
+.sombra-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.sombra-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 1rem 3rem rgba(0,0,0,.175) !important;
+}
 
     
