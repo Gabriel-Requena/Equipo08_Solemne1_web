@@ -1,1 +1,19 @@
-# proyecto_destino_cordillera
+#Nombre de Proyecto: 
+
+
+#Integrantes: 
+#Benjamin del Valle 
+#Gabriel Requena 
+#Nicolas Venegas
+
+#Descripcion: 
+
+
+#Instrucciones para ejecutar el sitio: 
+
+
+#Tecnologias utilizadas: 
+
+
+#Distribucion de responsabilidades: 
+
