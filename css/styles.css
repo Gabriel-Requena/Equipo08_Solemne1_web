@@ -1,4 +1,4 @@
-.navbar-nav .nav-link {
+﻿.navbar-nav .nav-link {
     position: relative;
     padding-bottom: 6px;
 }
@@ -23,7 +23,42 @@
     width: 100%;
     height: auto;
     object-fit: cover;
-    max-height: 500px; /* Ajusta la altura máxima según tus necesidades */
+    max-height: 500px; /* Ajusta la altura mÃ¡xima segÃºn tus necesidades */
+}
+/* Estilos de las tarjetas de panoramas */
+.panoramas-section {
+    margin-top: 70px;
+}
+
+.panoramas-intro {
+    max-width: 760px;
+}
+
+.panoramas-kicker {
+    color: #C35627;
+    letter-spacing: .12em;
+}
+
+.panoramas-card-image {
+    height: 210px;
+    object-fit: cover;
+}
+
+.panoramas-badge {
+    background-color: #EFD7C8;
+    color: #593D2E;
+}
+/* Colores compartidos del encabezado y pie de página */
+.navbar {
+    background-color: #DCAA89;
+}
+
+.site-footer {
+    background-color: #30525C !important;
+}
+
+.site-footer a {
+    color: #fff !important;
 }
 
 .carrusel-tarjetas{
@@ -63,4 +98,3 @@
     box-shadow: 0 1rem 3rem rgba(0,0,0,.175) !important;
 }
 
-    
