@@ -16,7 +16,7 @@ La pagina consta de 4 páginas principales enlazadas entre ellas, manteniendo un
 Para poder ver correctamente este proyecto de manera, no es necesario instalar dependencias ni servidores de desarrollo. 
 
 Como único paso es clonar el repositorio en tu maquina local: 
-''bash 
+
 git clone https://github.com/Gabriel-Requena/Equipo08_Solemne1_web . 
 
 ## Tecnologías utilizadas: 
