@@ -1,74 +1,156 @@
-﻿<!DOCTYPE html>
-<html lang="ES-es">
+<!DOCTYPE html>
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Destino Cordillera | Reserva y Contactos </title>
+    <meta name="description" content="Solicita una reserva de alojamiento, gastronomía o panoramas en Destino Cordillera.">
+    <title>Destino Cordillera | Reserva y contacto</title>
+    <link rel="icon" href="img/logo.jpg" type="image/jpeg">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body class="body-reserva">
     <header class="header-reserva">
-        <nav class="nav-reserva">
+        <nav class="nav-reserva" aria-label="Navegación principal">
             <a class="logo-reserva" href="index.html">
-                <img style="border-radius: 5px;" src="img/logo.jpg" alt="Logo" width="35" height="35">
-                Destino Cordillera
+                <img src="img/logo.jpg" alt="" width="35" height="35">
+                <span>Destino Cordillera</span>
             </a>
+
+            <input class="menu-toggle" type="checkbox" id="menu-toggle" aria-label="Abrir menú">
+            <label class="menu-toggle-label" for="menu-toggle" aria-hidden="true">
+                <span></span><span></span><span></span>
+            </label>
+
             <ul class="menu-reserva">
-                <li class="#">
-                    <a href="index.html">Inicio</a>
-                </li>
-                <li class="#">
-                    <a href="panoramas.html">Panoramas</a>
-                </li>
-                <li class="#">
-                    <a href="alojamiento.html">Alojamientos y Gastronomí­a</a>
-                </li>
-                <li>
-                    <a class="#" href="reserva.html">Reserva y Contactos</a>
-                </li>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="panoramas.html">Panoramas</a></li>
+                <li><a href="alojamiento.html">Alojamientos y Gastronomía</a></li>
+                <li><a href="reserva.html" aria-current="page">Reserva y Contactos</a></li>
             </ul>
         </nav>
     </header>
 
     <main class="main-reserva">
+        <section class="reserva-intro" aria-labelledby="titulo-reserva">
+            <p class="reserva-etiqueta">Planea tu visita</p>
+            <h1 id="titulo-reserva">Reserva y contacto</h1>
+            <p>Cuéntanos qué te gustaría hacer en Destino Cordillera. Puedes solicitar alojamiento, una experiencia gastronómica o un panorama.</p>
+        </section>
 
+        <div class="reserva-layout">
+            <section class="reserva-form-card" aria-labelledby="titulo-formulario">
+                <h2 id="titulo-formulario">Solicita tu reserva</h2>
+                <p class="reserva-ayuda">Completa tus datos y selecciona el servicio que te interesa.</p>
+
+                <form class="form-reserva" action="mailto:info@destinocordillera.com" method="post" enctype="text/plain">
+                    <div class="form-grid">
+                        <div class="campo-reserva">
+                            <label for="nombre">Nombre completo</label>
+                            <input id="nombre" name="nombre" type="text" autocomplete="name" required>
+                        </div>
+                        <div class="campo-reserva">
+                            <label for="correo">Correo electrónico</label>
+                            <input id="correo" name="correo" type="email" autocomplete="email" required>
+                        </div>
+                        <div class="campo-reserva">
+                            <label for="telefono">Teléfono</label>
+                            <input id="telefono" name="telefono" type="tel" autocomplete="tel" placeholder="+56 9 1234 5678">
+                        </div>
+                        <div class="campo-reserva">
+                            <label for="tipo-servicio">¿Qué quieres reservar?</label>
+                            <select id="tipo-servicio" name="tipo de servicio" required>
+                                <option value="" selected disabled>Selecciona una opción</option>
+                                <option value="alojamiento">Alojamiento</option>
+                                <option value="gastronomia">Gastronomía</option>
+                                <option value="panorama">Panorama o actividad</option>
+                            </select>
+                        </div>
+                        <div class="campo-reserva">
+                            <label for="preferencia">Servicio de interés</label>
+                            <select id="preferencia" name="servicio de interes" required>
+                                <option value="" selected disabled>Selecciona una opción</option>
+                                <optgroup label="Alojamientos">
+                                    <option>Hotel y descanso</option>
+                                    <option>Refugio en el bosque</option>
+                                    <option>Escapada junto al lago</option>
+                                </optgroup>
+                                <optgroup label="Gastronomía">
+                                    <option>Restaurante El Fogón</option>
+                                    <option>Mora Sushi Bar</option>
+                                    <option>Trattoria da Pietro</option>
+                                </optgroup>
+                                <optgroup label="Panoramas">
+                                    <option>Ascenso al volcán</option>
+                                    <option>Rafting en aguas blancas</option>
+                                    <option>Circuito de termas</option>
+                                    <option>Trekking de araucarias y lagunas</option>
+                                    <option>Tour de saltos y pozones</option>
+                                    <option>Deportes náuticos y playa volcánica</option>
+                                </optgroup>
+                            </select>
+                        </div>
+                        <div class="campo-reserva">
+                            <label for="fecha">Fecha preferida</label>
+                            <input id="fecha" name="fecha" type="date">
+                        </div>
+                        <div class="campo-reserva">
+                            <label for="personas">Número de personas</label>
+                            <input id="personas" name="personas" type="number" min="1" max="30" value="2">
+                        </div>
+                        <div class="campo-reserva campo-completo">
+                            <label for="mensaje">Comentarios adicionales</label>
+                            <textarea id="mensaje" name="comentarios" rows="4" placeholder="Cuéntanos si tienes algún requerimiento especial."></textarea>
+                        </div>
+                    </div>
+                    <button class="boton-reserva" type="submit">Enviar solicitud</button>
+                    <p class="form-nota">La solicitud abrirá tu aplicación de correo para enviar los datos.</p>
+                </form>
+            </section>
+
+            <aside class="reserva-contacto" aria-labelledby="titulo-contacto">
+                <h2 id="titulo-contacto">¿Tienes dudas?</h2>
+                <p>Estamos disponibles para ayudarte a organizar tu visita.</p>
+                <div class="contacto-dato">
+                    <span class="contacto-icono" aria-hidden="true">☎</span>
+                    <div><h3>Teléfono</h3><a href="tel:+56912345678">+56 9 1234 5678</a></div>
+                </div>
+                <div class="contacto-dato">
+                    <span class="contacto-icono" aria-hidden="true">✉</span>
+                    <div><h3>Correo electrónico</h3><a href="mailto:info@destinocordillera.com">info@destinocordillera.com</a></div>
+                </div>
+                <div class="contacto-dato">
+                    <span class="contacto-icono" aria-hidden="true">⌖</span>
+                    <div><h3>Dirección</h3><p>Calle Principal 123,<br>Destino Cordillera, Chile</p></div>
+                </div>
+                <p class="contacto-nota">Te responderemos para confirmar disponibilidad y los detalles de tu solicitud.</p>
+            </aside>
+        </div>
     </main>
 
     <footer class="footer-reserva">
         <div class="footer-contenido">
-
             <div class="footer-row">
-                <div class="footer-columna">
-                    <h5>Explorar</h5>
+                <section class="footer-columna" aria-labelledby="footer-explorar">
+                    <h2 id="footer-explorar">Explorar</h2>
                     <ul>
-                        <li style="color: white;"><a href="index.html"
-                                class="text-decoration-none text-white-50 footer-link">Inicio</a></li>
-                        <li style="color: white;"><a href="panoramas.html"
-                                class="text-decoration-none text-white-50 footer-link">Panoramas</a></li>
-                        <li style="color: white;"><a href="alojamiento.html"
-                                class="text-decoration-none text-white-50 footer-link">Alojamientos y Gastronomía</a>
-                        </li>
-                        <li style="color: white;"><a href="reserva.html"
-                                class="text-decoration-none text-white-50 footer-link">Reserva y Contactos</a></li>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="panoramas.html">Panoramas</a></li>
+                        <li><a href="alojamiento.html">Alojamientos y Gastronomía</a></li>
+                        <li><a href="reserva.html">Reserva y Contactos</a></li>
                     </ul>
-                </div>
-
-                <div class="footer-columna">
-                    <h5>Contacto</h5>
+                </section>
+                <section class="footer-columna" aria-labelledby="footer-contacto">
+                    <h2 id="footer-contacto">Contacto</h2>
                     <ul>
-                        <li style="color: white;">Teléfono: +56 9 1234 5678</li>
-                        <li style="color: white;">Email: <a href="mailto:info@destinocordillera.com"
-                                class="text-decoration-none text-white-50"
-                                style="color: white;">info@destinocordillera.com</a></li>
-                        <li style="color: white;">Dirección: Calle Principal 123, Ciudad, País</li>
+                        <li><a href="tel:+56912345678">+56 9 1234 5678</a></li>
+                        <li><a href="mailto:info@destinocordillera.com">info@destinocordillera.com</a></li>
+                        <li>Calle Principal 123, Destino Cordillera</li>
                     </ul>
-                </div>
+                </section>
             </div>
-        </div>
-        <div class="footer-copyright">
-            <p>&copy; 2026 Destino Cordillera. Todos los derechos reservados.</p>
+            <p class="footer-copyright">&copy; 2026 Destino Cordillera. Todos los derechos reservados.</p>
         </div>
     </footer>
 </body>
