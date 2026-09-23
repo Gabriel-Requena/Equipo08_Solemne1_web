@@ -25,6 +25,52 @@
     object-fit: cover;
     max-height: 500px; /* Ajusta la altura mÃ¡xima segÃºn tus necesidades */
 }
+.carousel-card {
+    flex: 0 0 320px;
+    width: 320px;
+    height: 220px;
+}
+
+.carousel-card img {
+    display: block;
+    object-fit: cover;
+}
+
+.carousel-cards-track {
+    scrollbar-width: thin;
+    scrollbar-color: #DCAA89 #f1f1f1;
+}
+
+.carousel-cards-track::-webkit-scrollbar {
+    height: 10px;
+}
+
+.carousel-cards-track::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+
+.carousel-cards-track::-webkit-scrollbar-thumb {
+    background: #DCAA89;
+    border-radius: 10px;
+}
+
+.carousel-cards-track::-webkit-scrollbar-thumb:hover {
+    background: #c35627;
+}
+
+.carousel-nav-btn {
+    width: 40px;
+    height: 40px;
+}
+
+@media (max-width: 575.98px) {
+    .carousel-card {
+        flex-basis: min(82vw, 320px);
+        width: min(82vw, 320px);
+        height: 200px;
+    }
+}
 /* Estilos de las tarjetas de panoramas */
 .panoramas-section {
     margin-top: 70px;
@@ -44,10 +90,6 @@
     object-fit: cover;
 }
 
-.panoramas-badge {
-    background-color: #EFD7C8;
-    color: #593D2E;
-}
 /* Colores compartidos del encabezado y pie de página */
 .navbar {
     background-color: #DCAA89;
@@ -59,43 +101,6 @@
 
 .site-footer a {
     color: #fff !important;
-}
-
-.carrusel-tarjetas{
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    -webkit-overflow-scrolling: touch;
-}
-
-.carrusel-tarjetas .card {
-    min-width: 320px;
-    max-width: 320px;
-    scroll-snap-align: start;
-    flex: 0 0 auto;
-}
-
-.carrusel-tarjetas::-webkit-scrollbar {
-    height: 10px;
-}
-.carrusel-tarjetas::-webkit-scrollbar-track{
-    background: #f1f1f1;
-    border-radius: 10px;
-}
-.carrusel-tarjetas::-webkit-scrollbar-thumb{
-    background: #DCAA89;
-    border-radius: 10px;
-}
-.carrusel-tarjetas::-webkit-scrollbar-thumb:hover {
-    background: #c35627;
-}
-
-.sombra-card {
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.sombra-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 1rem 3rem rgba(0,0,0,.175) !important;
 }
 
 /* Seccion de CSS para la pagina de Reservas */ 
@@ -155,11 +160,6 @@
 .menu-reserva a {
     text-decoration: none;
     color: #000000;
-    transition: color 0.3s;
-}
-
-.menu-reserva a:hover, .menu-reserva a.activo {
-    color: #000000;
 }
 
 .main-reserva{
@@ -172,43 +172,10 @@
     margin-top: 70px;
 }
 
-.inicio-reserva{
-    text-align: center;
-    margin-bottom: 3rem;
-}
-
-.etiqueta-reserva{
-    color:#0d6efd;
-    font-weight: 600;
-    text-transform: uppercase;
-    font-size: 0.9rem;
-}
-
-.inicio-reserva h1{
-    font-size: 2.5rem;
-    margin: 0.5rem 0;
-}
-
-.inicio-reserva p{
-    color: #6c757d;
-    font-size: 1.1rem;
-    max-width: 600px;
-    margin: 0 auto;
-}
-
-
-
-
-
-
-
-
 .footer-reserva {
     background-color: #30525C;
     color: white;
     padding: 3rem 1.5rem 1rem;
-    padding-bottom: 1rem;
-    padding-top: 3rem;
     margin-top: auto;
 }
 
@@ -216,8 +183,6 @@
     width: 100%;
     max-width: 1320px;
     margin: 0 auto;
-    gap: 2rem;
-    flex-wrap: wrap;
     margin-bottom: 2rem;
 }
 .footer-row{
@@ -261,13 +226,6 @@
     text-decoration: none;
 }
 
-.footer-divi{
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    border: 0;
-    border-top: 1px solid #6c757d;
-}
-
 .footer-copyright {
     text-align: center;
     border-top: 1px solid rgba(255, 255, 255, 0.2);
@@ -275,12 +233,10 @@
     color: rgba(255, 255, 255, 0.5);
     font-size: 0.9rem;
     margin: 0;
-    padding-bottom: 0;
 }
 
 .footer-copyright p{
     margin: 0;
-    padding-bottom: 0;
     font-size: 0.875rem; 
     color: rgba(255, 255, 255, 0.5);
 }
