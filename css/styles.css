@@ -1,22 +1,39 @@
-﻿.navbar-nav .nav-link {
+﻿:root {
+    --color-brand: #DCAA89;
+    --color-brand-light: #EFD7C8;
+    --color-brand-accent: #C35627;
+    --color-footer: #30525C;
+    --color-link: #0d6efd;
+    --font-site: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif;
+}
+
+.navbar-nav .nav-link,
+.menu-reserva a {
     position: relative;
     padding-bottom: 6px;
 }
 
-.navbar-nav .nav-link::after {
+.navbar {
+    background-color: var(--color-brand);
+}
+
+.navbar-nav .nav-link::after,
+.menu-reserva a::after {
     content: "";
     position: absolute;
     width: 0;
     height: 4px;
     bottom: 0;
     left: 50%;
-    background-color: #EFD7C8;
-    transition: all 0.3s ease;
+    background-color: var(--color-brand-light);
+    transition: width .3s ease;
     transform: translateX(-50%);
 }
 
 .navbar-nav .nav-item .nav-link:hover::after,
-.navbar-nav .nav-item .nav-link.active::after {
+.navbar-nav .nav-item .nav-link.active::after,
+.menu-reserva a:hover::after,
+.menu-reserva a[aria-current="page"]::after {
     width: 75%;
 }
 
@@ -54,15 +71,18 @@
     max-width: 760px;
 }
 
-.btn-white-blue {
-    color: #0d6efd;
-    border-color: #0d6efd;
+.btn-white-blue,
+.boton-reserva {
+    color: var(--color-link);
+    background-color: #fff;
+    border: 1px solid var(--color-link);
 }
 
-.btn-white-blue:hover {
+.btn-white-blue:hover,
+.boton-reserva:hover {
     color: #fff;
-    background-color: #0d6efd;
-    border-color: #0d6efd;
+    background-color: var(--color-link);
+    border: 1px solid var(--color-link);
 }
 
 @media (max-width: 767.98px) {
@@ -103,7 +123,7 @@
 
 .carousel-cards-track {
     scrollbar-width: thin;
-    scrollbar-color: #DCAA89 #f1f1f1;
+    scrollbar-color: var(--color-brand) #f1f1f1;
 }
 
 .carousel-cards-track::-webkit-scrollbar {
@@ -116,12 +136,12 @@
 }
 
 .carousel-cards-track::-webkit-scrollbar-thumb {
-    background: #DCAA89;
+    background: var(--color-brand);
     border-radius: 10px;
 }
 
 .carousel-cards-track::-webkit-scrollbar-thumb:hover {
-    background: #c35627;
+    background: var(--color-brand-accent);
 }
 
 .carousel-nav-btn {
@@ -147,12 +167,16 @@
 }
 
 .panoramas-kicker {
-    color: #C35627;
+    color: var(--color-brand-accent);
     letter-spacing: .12em;
 }
 
 .panoramas-card-image {
     height: 210px;
+}
+
+.panoramas-card-image,
+.carousel-card img {
     object-fit: cover;
 }
 
@@ -160,16 +184,13 @@
     scroll-margin-top: 120px;
 }
 
-/* Colores compartidos del encabezado y pie de página */
-.navbar {
-    background-color: #DCAA89;
+.site-footer,
+.footer-reserva {
+    background-color: var(--color-footer) !important;
 }
 
-.site-footer {
-    background-color: #30525C !important;
-}
-
-.site-footer a {
+.site-footer a,
+.footer-columna a {
     color: #fff !important;
 }
 
@@ -181,14 +202,14 @@
     margin: 0;
     color: #212529;
     background: #f8f9fa;
-    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif;
+    font-family: var(--font-site);
 }
 
 .header-reserva {
     position: sticky;
     top: 0;
     z-index: 10;
-    background: #DCAA89;
+    background: var(--color-brand);
     box-shadow: 0 2px 8px rgba(0, 0, 0, .12);
 }
 
@@ -247,23 +268,6 @@
     color: rgba(0, 0, 0, .9);
 }
 
-.menu-reserva a::after {
-    position: absolute;
-    right: 50%;
-    bottom: 0;
-    left: 50%;
-    height: 3px;
-    background: #EFD7C8;
-    content: "";
-    transition: left .2s ease, right .2s ease;
-}
-
-.menu-reserva a:hover::after,
-.menu-reserva a[aria-current="page"]::after {
-    right: 0;
-    left: 0;
-}
-
 .menu-toggle {
     display: none;
 }
@@ -287,7 +291,7 @@
 
 .reserva-etiqueta {
     margin: 0 0 .5rem;
-    color: #C35627;
+    color: var(--color-brand-accent);
     font-size: .85rem;
     font-weight: 750;
     letter-spacing: .14em;
@@ -301,7 +305,7 @@
     line-height: 1.1;
 }
 
-.reserva-intro > p:last-child,
+.reserva-intro>p:last-child,
 .reserva-ayuda {
     color: #66727d;
     line-height: 1.7;
@@ -378,7 +382,7 @@
 .campo-reserva input:focus,
 .campo-reserva select:focus,
 .campo-reserva textarea:focus {
-    border-color: #0d6efd;
+    border-color: var(--color-link);
     outline: 3px solid rgba(13, 110, 253, .16);
 }
 
@@ -390,19 +394,11 @@
     min-height: 46px;
     margin-top: 1.25rem;
     padding: .65rem 1.25rem;
-    border: 1px solid #0d6efd;
     border-radius: 7px;
-    background: #fff;
-    color: #0d6efd;
     font: inherit;
     font-weight: 650;
     cursor: pointer;
     transition: background .2s ease, color .2s ease;
-}
-
-.boton-reserva:hover {
-    background: #0d6efd;
-    color: #fff;
 }
 
 .form-nota {
@@ -412,7 +408,7 @@
 }
 
 .reserva-contacto {
-    background: #30525C;
+    background: var(--color-footer);
     color: #fff;
 }
 
@@ -421,7 +417,7 @@
     color: #fff;
 }
 
-.reserva-contacto > p {
+.reserva-contacto>p {
     color: rgba(255, 255, 255, .78);
     line-height: 1.65;
 }
@@ -468,7 +464,7 @@
 .footer-reserva {
     margin-top: auto;
     padding: 3rem 1rem 1rem;
-    background: #30525C;
+    background: var(--color-footer);
     color: #fff;
 }
 
@@ -540,7 +536,7 @@
         opacity: 0;
     }
 
-    .menu-toggle:focus-visible + .menu-toggle-label {
+    .menu-toggle:focus-visible+.menu-toggle-label {
         outline: 2px solid #0d6efd;
         outline-offset: 3px;
     }
@@ -560,7 +556,7 @@
         align-items: stretch;
         gap: .15rem;
         padding: .5rem 1rem 1rem;
-        background: #DCAA89;
+        background: var(--color-brand);
         box-shadow: 0 8px 12px rgba(0, 0, 0, .12);
     }
 
@@ -573,7 +569,7 @@
         padding: .7rem .2rem;
     }
 
-    .menu-toggle:checked ~ .menu-reserva {
+    .menu-toggle:checked~.menu-reserva {
         display: flex;
         flex-direction: column;
     }
