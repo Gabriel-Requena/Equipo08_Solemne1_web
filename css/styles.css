@@ -90,6 +90,10 @@
     object-fit: cover;
 }
 
+#gastronomia-recomendada {
+    scroll-margin-top: 120px;
+}
+
 /* Colores compartidos del encabezado y pie de página */
 .navbar {
     background-color: #DCAA89;
