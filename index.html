@@ -6,13 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Destino Cordillera | Inicio</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body class="d-flex flex-column min-vh-100">
 
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light fixed-top shadow-sm">
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top shadow-sm main-navbar">
             <div class="container">
                 <a class="navbar-brand fw-bold fs-4" href="index.html">
                     <img src="img/logo.jpg" alt="Logo" class="d-inline-block align-top rounded" width="35" height="35">
@@ -46,21 +47,224 @@
     <main class="flex-grow-1">
         <section class="hero-section position-relative text-center text-white">
             <img src="https://q-xx.bstatic.com/xdata/images/city/1200x630/1012278.jpg?k=64abf03d59634616da13c08c743e1746db483215172b7a6835ac1a18d95edab0&o="
+    <main class="flex-grow-1">
+        <section class="hero-section position-relative text-center text-white">
+            <img src="https://q-xx.bstatic.com/xdata/images/city/1200x630/1012278.jpg?k=64abf03d59634616da13c08c743e1746db483215172b7a6835ac1a18d95edab0&o="
                 alt="Hero Image" class="hero-image img-fluid rounded-bottom" loading="lazy">
             <div class="position-absolute top-50 start-50 translate-middle w-100 px-3">
-                <h1 class="display-3 fw-bold mb-3 shadow-text" style="color: #C35627">Descubre la Magia de Destino
+                <h1 class="display-3 fw-bold mb-3 shadow-text hero-title">Descubre la Magia de Destino
                     Cordillera</h1>
-                <p class="lead mb-4 shadow-text fw-bold" style="color: #3b3a3a">Sumérgete en la belleza natural de
-                    Destino Cordillera y descubre sus secretos más ocultos.</p>
+                <p class="lead mb-4 shadow-text fw-bold hero-copy">Sumérgete en la belleza natural de
+                    Destino Cordillera y descubre sus secretos mÃ¡s ocultos.</p>
                 <a href="panoramas.html" class="btn btn-primary btn-lg">Explora Ahora</a>
             </div>
         </section>
 
         <section class="container my-5 py-4">
-            <h2 class="display-6 fw-bold">Nuestras Actividades</h2>
+            <div class="d-flex justify-content-between align-items-end mb-4">
+                <h2 class="display-6 fw-bold mb-0">Descubre nuestros panoramas</h2>
+                <a href="panoramas.html"
+                    class="text-decoration-none fw-semibold d-inline-flex align-items-center gap-1 section-link">
+                    Ver todos los panoramas <i class="bi bi-arrow-right"></i>
+                </a>
+            </div>
 
-            <!-- Aca es el lugar de unas tarjetas que direcciones hacia las otras paginas -->
+            <div class="carousel-custom-wrapper position-relative">
+                <div class="carousel-cards-track d-flex gap-4 overflow-x-auto pb-3" id="panoramasTrack">
+                    <article class="carousel-card position-relative rounded-4 overflow-hidden flex-shrink-0 shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80"
+                            alt="Montana y Nieve" class="w-100 h-100 object-fit-cover">
+                        <div
+                            class="overlay-card position-absolute bottom-0 start-0 w-100 p-4 d-flex justify-content-between align-items-end text-white">
+                            <h3 class="h5 fw-bold mb-0">Montaña y Nieve</h3>
+                            <a href="panoramas.html" class="btn-card-arrow text-white"
+                                aria-label="Ver Montaña y Nieve">
+                                <i class="bi bi-arrow-right fs-5"></i>
+                            </a>
+                        </div>
+                    </article>
 
+                    <article class="carousel-card position-relative rounded-4 overflow-hidden flex-shrink-0 shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=800&q=80"
+                            alt="Bosques y Senderos" class="w-100 h-100 object-fit-cover">
+                        <div
+                            class="overlay-card position-absolute bottom-0 start-0 w-100 p-4 d-flex justify-content-between align-items-end text-white">
+                            <h3 class="h5 fw-bold mb-0">Bosques y Senderos</h3>
+                            <a href="panoramas.html" class="btn-card-arrow text-white"
+                                aria-label="Ver Bosques y Senderos">
+                                <i class="bi bi-arrow-right fs-5"></i>
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="carousel-card position-relative rounded-4 overflow-hidden flex-shrink-0 shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1509316785289-025f5b846b35?auto=format&fit=crop&w=800&q=80"
+                            alt="Desierto y altiplano" class="w-100 h-100 object-fit-cover" loading="lazy">
+                        <div
+                            class="overlay-card position-absolute bottom-0 start-0 w-100 p-4 d-flex justify-content-between align-items-end text-white">
+                            <h3 class="h5 fw-bold mb-0">Desierto y altiplano</h3><a href="panoramas.html"
+                                class="btn-card-arrow text-white" aria-label="Ver desierto y altiplano"><i
+                                    class="bi bi-arrow-right fs-5"></i></a>
+                        </div>
+                    </article>
+
+                    <article class="carousel-card position-relative rounded-4 overflow-hidden flex-shrink-0 shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=800&q=80"
+                            alt="Valles y lagos" class="w-100 h-100 object-fit-cover" loading="lazy">
+                        <div
+                            class="overlay-card position-absolute bottom-0 start-0 w-100 p-4 d-flex justify-content-between align-items-end text-white">
+                            <h3 class="h5 fw-bold mb-0">Valles y lagos</h3><a href="panoramas.html"
+                                class="btn-card-arrow text-white" aria-label="Ver valles y lagos"><i
+                                    class="bi bi-arrow-right fs-5"></i></a>
+                        </div>
+                    </article>
+                </div>
+                <div class="d-flex gap-2 mt-3">
+                    <button
+                        class="btn btn-outline-secondary rounded-circle carousel-nav-btn d-flex align-items-center justify-content-center"
+                        data-carousel="panoramasTrack" data-direction="-1" aria-label="Ver panoramas anteriores">
+                        <i class="bi bi-arrow-left"></i>
+                    </button>
+                    <button
+                        class="btn btn-outline-secondary rounded-circle carousel-nav-btn d-flex align-items-center justify-content-center"
+                        data-carousel="panoramasTrack" data-direction="1" aria-label="Ver más panoramas">
+                        <i class="bi bi-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <section class="container my-5 py-4">
+            <div class="d-flex justify-content-between align-items-end mb-4">
+                <h2 class="display-6 fw-bold mb-0">Nuestra Gastronomía</h2>
+                <a href="alojamiento.html" class="text-decoration-none fw-semibold section-link">Ver toda la
+                    gastronomía <i class="bi bi-arrow-right"></i></a>
+            </div>
+            <div class="carousel-custom-wrapper position-relative">
+                <div class="carousel-cards-track d-flex gap-4 overflow-x-auto pb-3" id="gastronomiaTrack">
+                    <article class="carousel-card position-relative rounded-4 overflow-hidden flex-shrink-0 shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=800&q=80"
+                            alt="Pizza artesanal" class="w-100 h-100 object-fit-cover" loading="lazy">
+                        <div
+                            class="overlay-card position-absolute bottom-0 start-0 w-100 p-4 d-flex justify-content-between align-items-end text-white">
+                            <h3 class="h5 fw-bold mb-0">Sabores de montaña</h3><a href="alojamiento.html"
+                                class="btn-card-arrow text-white" aria-label="Ver sabores de montaña"><i
+                                    class="bi bi-arrow-right fs-5"></i></a>
+                        </div>
+                    </article>
+                    <article class="carousel-card position-relative rounded-4 overflow-hidden flex-shrink-0 shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80"
+                            alt="Plato de comida local" class="w-100 h-100 object-fit-cover" loading="lazy">
+                        <div
+                            class="overlay-card position-absolute bottom-0 start-0 w-100 p-4 d-flex justify-content-between align-items-end text-white">
+                            <h3 class="h5 fw-bold mb-0">Cocina local</h3><a href="alojamiento.html"
+                                class="btn-card-arrow text-white" aria-label="Ver cocina local"><i
+                                    class="bi bi-arrow-right fs-5"></i></a>
+                        </div>
+                    </article>
+                    <article class="carousel-card position-relative rounded-4 overflow-hidden flex-shrink-0 shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=800&q=80"
+                            alt="Postre artesanal" class="w-100 h-100 object-fit-cover" loading="lazy">
+                        <div
+                            class="overlay-card position-absolute bottom-0 start-0 w-100 p-4 d-flex justify-content-between align-items-end text-white">
+                            <h3 class="h5 fw-bold mb-0">Dulces y repostería</h3><a href="alojamiento.html"
+                                class="btn-card-arrow text-white" aria-label="Ver dulces y repostería"><i
+                                    class="bi bi-arrow-right fs-5"></i></a>
+                        </div>
+                    </article>
+                    <article class="carousel-card position-relative rounded-4 overflow-hidden flex-shrink-0 shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1476224203421-9ac39bcb3327?auto=format&fit=crop&w=800&q=80"
+                            alt="Plato preparado con ingredientes frescos" class="w-100 h-100 object-fit-cover"
+                            loading="lazy">
+                        <div
+                            class="overlay-card position-absolute bottom-0 start-0 w-100 p-4 d-flex justify-content-between align-items-end text-white">
+                            <h3 class="h5 fw-bold mb-0">Productos de la zona</h3><a href="alojamiento.html"
+                                class="btn-card-arrow text-white" aria-label="Ver productos de la zona"><i
+                                    class="bi bi-arrow-right fs-5"></i></a>
+                        </div>
+                    </article>
+                </div>
+                <div class="d-flex gap-2 mt-3">
+                    <button
+                        class="btn btn-outline-secondary rounded-circle carousel-nav-btn d-flex align-items-center justify-content-center"
+                        data-carousel="gastronomiaTrack" data-direction="-1" aria-label="Anterior"><i
+                            class="bi bi-arrow-left"></i></button>
+                    <button
+                        class="btn btn-outline-secondary rounded-circle carousel-nav-btn d-flex align-items-center justify-content-center"
+                        data-carousel="gastronomiaTrack" data-direction="1" aria-label="Siguiente"><i
+                            class="bi bi-arrow-right"></i></button>
+                </div>
+            </div>
+        </section>
+
+        <section class="container my-5 py-4">
+            <div class="d-flex justify-content-between align-items-end mb-4">
+                <h2 class="display-6 fw-bold mb-0">Explora nuestros alojamientos</h2>
+                <a href="alojamiento.html"
+                    class="text-decoration-none fw-semibold section-link d-inline-flex align-items-center gap-2">Ver
+                    todos los alojamientos <i class="bi bi-arrow-right"></i></a>
+            </div>
+            <div class="carousel-custom-wrapper position-relative">
+                <div class="carousel-cards-track d-flex gap-4 overflow-x-auto pb-3" id="alojamientosTrack">
+                    <article class="carousel-card position-relative rounded-4 overflow-hidden flex-shrink-0 shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1445019980597-93fa8acb246c?auto=format&fit=crop&w=800&q=80"
+                            alt="Cabana acogedora en la montana" class="w-100 h-100 object-fit-cover" loading="lazy">
+                        <div
+                            class="overlay-card position-absolute bottom-0 start-0 w-100 p-4 d-flex justify-content-between align-items-end text-white">
+                            <h3 class="h5 fw-bold mb-0">Cabañas de montaña</h3><a href="alojamiento.html"
+                                class="btn-card-arrow text-white" aria-label="Ver cabañas de montaña"><i
+                                    class="bi bi-arrow-right fs-5"></i></a>
+                        </div>
+                    </article>
+                    <article class="carousel-card position-relative rounded-4 overflow-hidden flex-shrink-0 shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1510798831971-661eb04b3739?auto=format&fit=crop&w=800&q=80"
+                            alt="Refugio rodeado de bosque" class="w-100 h-100 object-fit-cover" loading="lazy">
+                        <div
+                            class="overlay-card position-absolute bottom-0 start-0 w-100 p-4 d-flex justify-content-between align-items-end text-white">
+                            <h3 class="h5 fw-bold mb-0">Refugios en el bosque</h3><a href="alojamiento.html"
+                                class="btn-card-arrow text-white" aria-label="Ver refugios en el bosque"><i
+                                    class="bi bi-arrow-right fs-5"></i></a>
+                        </div>
+                    </article>
+                    <article class="carousel-card position-relative rounded-4 overflow-hidden flex-shrink-0 shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=800&q=80"
+                            alt="Hotel con piscina y vista a la montana" class="w-100 h-100 object-fit-cover"
+                            loading="lazy">
+                        <div
+                            class="overlay-card position-absolute bottom-0 start-0 w-100 p-4 d-flex justify-content-between align-items-end text-white">
+                            <h3 class="h5 fw-bold mb-0">Hoteles y descanso</h3><a href="alojamiento.html"
+                                class="btn-card-arrow text-white" aria-label="Ver hoteles y descanso"><i
+                                    class="bi bi-arrow-right fs-5"></i></a>
+                        </div>
+                    </article>
+                    <article class="carousel-card position-relative rounded-4 overflow-hidden flex-shrink-0 shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1449158743715-0a90ebb6d2d8?auto=format&fit=crop&w=800&q=80"
+                            alt="Cabana junto a un lago" class="w-100 h-100 object-fit-cover" loading="lazy">
+                        <div
+                            class="overlay-card position-absolute bottom-0 start-0 w-100 p-4 d-flex justify-content-between align-items-end text-white">
+                            <h3 class="h5 fw-bold mb-0">Escapadas junto al lago</h3><a href="alojamiento.html"
+                                class="btn-card-arrow text-white" aria-label="Ver escapadas junto al lago"><i
+                                    class="bi bi-arrow-right fs-5"></i></a>
+                        </div>
+                    </article>
+                </div>
+                <div class="d-flex gap-2 mt-3">
+                    <button
+                        class="btn btn-outline-secondary rounded-circle carousel-nav-btn d-flex align-items-center justify-content-center"
+                        data-carousel="alojamientosTrack" data-direction="-1"
+                        aria-label="Ver alojamientos anteriores"><i class="bi bi-arrow-left"></i></button>
+                    <button
+                        class="btn btn-outline-secondary rounded-circle carousel-nav-btn d-flex align-items-center justify-content-center"
+                        data-carousel="alojamientosTrack" data-direction="1" aria-label="Ver más alojamientos"><i
+                            class="bi bi-arrow-right"></i></button>
+                </div>
+            </div>
+        </section>
+
+        <section class="container my-5 py-4">
+            <h2 class="display-6 fw-bold mb-0">Reserva aquí</h2>
+            <a href="reserva.html" class="btn btn-primary btn-lg">Reserva tu estadía</a>
         </section>
     </main>
 
@@ -98,6 +302,13 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.querySelectorAll("[data-carousel][data-direction]").forEach((button) => {
+            button.addEventListener("click", () => {
+                const track = document.getElementById(button.dataset.carousel);
+                track.scrollBy({ left: Number(button.dataset.direction) * track.clientWidth * 0.75, behavior: "smooth" });
+            });
+        });
+    </script>
 </body>
-
 </html>

@@ -1,19 +1,18 @@
 # Destino Cordillera 
 
-
 ## Integrantes: 
-Benjamin del Valle,
+Benjamín del Valle,
 Gabriel Requena y  
-Nicolas Venegas
+Nicolás Venegas
 
-## Descripcion: 
+## Descripción: 
 
 
 ## Instrucciones para ejecutar el sitio: 
 
 
-## Tecnologias utilizadas: 
+## Tecnologías utilizadas: 
+-CSS
+-Bootstrap
 
-
-## Distribucion de responsabilidades: 
-
+## Distribución de responsabilidades: 
