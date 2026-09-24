@@ -28,11 +28,17 @@ git clone https://github.com/Gabriel-Requena/Equipo08_Solemne1_web .
 ## Distribución de responsabilidades: 
 
 1. Benjamin del Valle: 
+-Desarrollo de la página completa de panoramas.
+-Encargado de calidad (QA).
+-Definir estilo de tarjetas.
 
 2. Gabriel Requena: 
 -Desarrollo de la pagina completa de Alojamientos y Gastronoía.
 -Maquetacion base y estilos en CSS (sin Bootstrap) para el Navbar y Footer.
 -Encargado tambien de definir paleta de colores de la página. 
--Defeinir el diseño del Navbar y Footer de todas las paginas. 
+-Definir el diseño del Navbar y Footer de todas las paginas. 
 
 3. Nicolas Venegas:
+-Desarrollo de la página completa de reserva.
+-Desarrollo de la página principal (index).
+-Definir estilo css para página reserva.

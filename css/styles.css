@@ -171,8 +171,14 @@
     letter-spacing: .12em;
 }
 
+
+
 .panoramas-card-image {
     height: 210px;
+}
+
+.alojamiento-card-image {
+    height: 250px;
 }
 
 .panoramas-card-image,
@@ -593,3 +599,6 @@
         grid-column: auto;
     }
 }
+
+
+
